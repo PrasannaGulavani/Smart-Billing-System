@@ -1,0 +1,63 @@
+sudo apt update
+
+Not Use if required then- > sudo apt upgrade
+
+sudo raspi-config -> enable vnc and ssh
+
+sudo apt install xrdp
+
+username - pi
+password- raspberry
+
+hostname -I
+
+
+//sudo pip install --upgrade pip setuptools
+
+//sudo shutdown -now
+
+//sudo apt install python3-full
+//or
+//sudo apt install python3-venv
+
+
+//python3 -m venv .venv
+//source .venv/bin/activate
+
+//apt search numpy
+//sudo apt install python3-numpy
+
+//How to Create a Python Virtual Environment
+
+
+python -m venv muo-project
+cd muo-project
+source bin/activate
+pip install packages
+//Run Python Program In Virtual Environment
+
+source muo-project/bin/activate
+python my_script.py
+pip install package_name
+
+deactivate
+
+
+
+
+pip install setuptools
+pip install Cython
+
+//To Solve if occure
+//when i am installing h5py or tensor flow on raspberry its show error
+//ERROR: Could not build wheels for h5py, which is required to install pyproject.toml-based projects
+sudo apt update
+sudo apt upgrade
+sudo apt install libhdf5-dev libc-ares-dev libeigen3-dev
+sudo apt install build-essential
+
+pip install h5py
+or
+pip install h5py==3.4.0
+
+pip install tensorflow
